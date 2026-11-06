@@ -1,4 +1,4 @@
-name: CI v2
+name: CI v3
 on:
   push:
     branches: [main]
@@ -12,4 +12,5 @@ jobs:
       - uses: actions/setup-python@v6
         with: {python-version: "3.12"}
       - run: pip install -r requirements.txt pytest
+
       - run: pytest -v
